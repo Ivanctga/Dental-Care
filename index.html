@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- =========================================================
+      Clínica Odontológica Premium — Site Institucional
+      Tecnologias: HTML5 + CSS3 + Vanilla JS
+      ========================================================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1D4ED8" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- =========================================================
+      SEO
+      ========================================================= -->
+    <title>Dental Care — Clínica Odontológica de Alto Padrão</title>
+    <meta
+      name="description"
+      content="Transforme seu sorriso com tecnologia avançada e atendimento humanizado. Clareamento, implantes, ortodontia, harmonização facial e estética dental com excelência."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://www.seudominio.com.br/" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dental Care — Clínica Odontológica de Alto Padrão" />
+    <meta
+      property="og:description"
+      content="Tecnologia, sofisticação e cuidado humano. Agende sua avaliação e descubra o sorriso que você merece."
+    />   
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dental Care — Clínica Odontológica de Alto Padrão" />
+    <meta
+      name="twitter:description"
+      content="Sofisticação, segurança e resultados naturais. Agende sua avaliação."
+    />
+    
+
+    <!-- =========================================================
+      Fonts (Google Fonts)
+      ========================================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================================
+      Icons (Font Awesome CDN)
+      ========================================================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- =========================================================
+      Loader (opcional — elegante e leve)
+      ========================================================= -->
+
+
+    <!-- =========================================================
+      Header Premium (Sticky + Scroll background)
+      ========================================================= -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="brand" href="#inicio" aria-label="Ir para o início">
+          <span class="brand__mark" aria-hidden="true">
+            <i class="fa-solid fa-tooth"></i>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Dental Care</span>
+            <span class="brand__tag">Estética • Implantes • Ortodontia</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Menu principal">
+          <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav__panel" id="navPanel">
+            <ul class="nav__list">
+              <li><a class="nav__link" href="#sobre">Sobre</a></li>
+              <li><a class="nav__link" href="#servicos">Serviços</a></li>
+              <li><a class="nav__link" href="#diferenciais">Diferenciais</a></li>
+              <li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+              <li><a class="nav__link" href="#contato">Contato</a></li>
+            </ul>
+
+            <a class="btn btn--primary nav__cta" href="#contato" data-cta="header">
+              <i class="fa-solid fa-calendar-check"></i>
+              Agendar Consulta
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <!-- =========================================================
+        Hero Section (Alta Conversão)
+        ========================================================= -->
+      <section class="hero">
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="hero__content reveal">            
+
+            <h1 class="hero__title">
+              A <span class="text-gradient">perfeição</span> em cada detalhe do seu <span class="text-gradient">sorriso</span>.
+            </h1>
+            <p class="hero__subtitle">
+              Um cuidado completo, do diagnóstico ao resultado final — com equipe especializada, conforto e
+              procedimentos que priorizam segurança, naturalidade e previsibilidade.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contato" data-cta="hero-primary">
+                <i class="fa-solid fa-calendar-check"></i>
+                Agendar avaliação
+              </a>
+              <a class="btn btn--ghost" href="#servicos" data-cta="hero-secondary">
+                <i class="fa-solid fa-sparkles"></i>
+                Ver tratamentos
+              </a>
+            </div>
+
+            <div class="hero__stats">
+              <div class="stat">
+                <div class="stat__value">+12</div>
+                <div class="stat__label">anos de experiência</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">Atendimento</div>
+                <div class="stat__label">pontual e acolhedor</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">Resultados</div>
+                <div class="stat__label">naturais e elegantes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+        Sobre a Clínica
+        ========================================================= -->
+      <section class="section about-premium" id="sobre">
+        <div class="container">
+          <div class="about-premium__grid">
+            <!-- Coluna Visual -->
+            <div class="about-premium__visual reveal">
+              <div class="about-premium__image-stack">
+                <div class="image-main">
+                  <img
+                    src="assets/img/sobre.jpg"
+                    alt="Ambiente clínico sofisticado"
+                    loading="lazy"
+                  />
+                  <div class="image-overlay"></div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="floating-card floating-card--top reveal" data-delay="200">
+                  <div class="floating-card__icon"><i class="fa-solid fa-star"></i></div>
+                  <div class="floating-card__text">
+                    <strong>Qualidade Premium</strong>
+                    <span>Padrão Internacional</span>
+                  </div>
+                </div>
+                <div class="floating-card floating-card--bottom reveal" data-delay="400">
+                  <div class="floating-card__stats">
+                    <strong>+15k</strong>
+                    <span>Sorrisos Transformados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna Conteúdo -->
+            <div class="about-premium__content reveal">
+              <p class="eyebrow eyebrow--accent">Nossa Essência</p>
+              <h2 class="h2 h2--slim">Excelência em cada detalhe para o seu <span class="text-gradient">bem-estar</span>.</h2>
+              <p class="section__sub">
+                Na Dental Care, acreditamos que a odontologia de alto padrão vai além da técnica. É sobre criar uma jornada de cuidado onde a inovação e o toque humano se encontram para entregar resultados extraordinários.
+              </p>
+
+              <div class="about-premium__features">
+                <div class="feature-item reveal" data-delay="100">
+                  <div class="feature-item__icon"><i class="fa-solid fa-microchip"></i></div>
+                  <div class="feature-item__text">
+                    <h3 class="h3">Tecnologia de Ponta</h3>
+                    <p class="p">Equipamentos de última geração e planejamento 100% digital para máxima precisão.</p>
+                  </div>
+                </div>
+                <div class="feature-item reveal" data-delay="200">
+                  <div class="feature-item__icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                  <div class="feature-item__text">
+                    <h3 class="h3">Atendimento Humanizado</h3>
+                    <p class="p">Uma experiência acolhedora focada no seu conforto e na escuta ativa das suas necessidades.</p>
+                  </div>
+                </div>
+                <div class="feature-item reveal" data-delay="300">
+                  <div class="feature-item__icon"><i class="fa-solid fa-award"></i></div>
+                  <div class="feature-item__text">
+                    <h3 class="h3">Resultados Reais</h3>
+                    <p class="p">Naturalidade e previsibilidade em cada procedimento, elevando sua autoestima e confiança.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-premium__actions">
+                <a href="#contato" class="btn btn--primary">
+                  <span>Descobrir a Experiência</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div class="about-premium__badge">
+                  <i class="fa-solid fa-certificate"></i>
+                  <span>Certificação de Excelência 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+        Serviços (Cards Premium)
+        ========================================================= -->
+      <section class="section section--alt" id="servicos">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Serviços</p>
+            <h2 class="h2">Tratamentos <span class="text-gradient">completos</span> com estética natural e <span class="text-gradient">segurança</span>.</h2>
+            <p class="section__sub">
+              Do cuidado preventivo às soluções avançadas, cada procedimento é pensado para você se sentir
+              seguro(a), confortável e confiante com o resultado.
+            </p>
+          </div>
+
+          <div class="cards cards--services">
+            <article class="serviceCard reveal">
+              <div class="serviceCard__icon" aria-hidden="true"><i class="fa-solid fa-sun"></i></div>
+              <h3 class="h3">Clareamento Dental</h3>
+              <p class="p">
+                Clareamento seguro e personalizado para iluminar seu sorriso com naturalidade e controle de
+                sensibilidade.
+              </p>
+            </article>
+
+            <article class="serviceCard reveal">
+              <div class="serviceCard__icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3 class="h3">Implantes</h3>
+              <p class="p">
+                Reabilitação com estabilidade e conforto. Planejamento digital para precisão, estética e
+                previsibilidade.
+              </p>
+            </article>
+
+            <article class="serviceCard reveal">
+              <div class="serviceCard__icon" aria-hidden="true"><i class="fa-solid fa-teeth"></i></div>
+              <h3 class="h3">Ortodontia</h3>
+              <p class="p">
+                Alinhamento com foco em harmonia facial e função. Opções modernas para diferentes perfis e
+                objetivos.
+              </p>
+            </article>
+
+            <article class="serviceCard reveal">
+              <div class="serviceCard__icon" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+              <h3 class="h3">Harmonização Facial</h3>
+              <p class="p">
+                Resultado natural e sofisticado, respeitando suas proporções. Técnica, segurança e bom senso
+                estético.
+              </p>
+            </article>
+
+            <article class="serviceCard reveal">
+              <div class="serviceCard__icon" aria-hidden="true"><i class="fa-solid fa-tooth"></i></div>
+              <h3 class="h3">Limpeza Dental</h3>
+              <p class="p">
+                Profilaxia profissional e orientação personalizada para manter gengivas saudáveis e um sorriso
+                sempre impecável.
+              </p>
+            </article>
+
+            <article class="serviceCard reveal">
+              <div class="serviceCard__icon" aria-hidden="true"><i class="fa-solid fa-gem"></i></div>
+              <h3 class="h3">Lentes de Contato Dental</h3>
+              <p class="p">
+                Estética de alto padrão com planejamento digital. Ajuste de forma e cor com máxima
+                naturalidade.
+              </p>
+            </article>
+          </div>
+
+          <div class="section__foot reveal">
+            <a class="btn btn--primary" href="#contato" data-cta="services">
+              <i class="fa-solid fa-message"></i>
+              Quero uma avaliação personalizada
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+        Diferenciais
+        ========================================================= -->
+      <section class="section" id="diferenciais">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Diferenciais</p>
+            <h2 class="h2">Uma <span class="text-gradient">experiência premium</span> em cada detalhe.</h2>
+            <p class="section__sub">
+              Aqui, o cuidado vai além do procedimento: é sobre confiança, conforto e resultado com
+              excelência.
+            </p>
+          </div>
+
+          <div class="features">
+            <div class="featureCard reveal">
+              <div class="featureCard__icon" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <h3 class="h3">Atendimento humanizado</h3>
+              <p class="p">Escuta ativa, acolhimento e clareza. Você se sente seguro(a) em todas as etapas.</p>
+            </div>
+
+            <div class="featureCard reveal">
+              <div class="featureCard__icon" aria-hidden="true"><i class="fa-solid fa-microchip"></i></div>
+              <h3 class="h3">Tecnologia moderna</h3>
+              <p class="p">Planejamento digital para aumentar precisão, conforto e previsibilidade.</p>
+            </div>
+
+            <div class="featureCard reveal">
+              <div class="featureCard__icon" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></div>
+              <h3 class="h3">Equipe especializada</h3>
+              <p class="p">Profissionais atualizados e criteriosos, com foco em estética e função.</p>
+            </div>
+
+            <div class="featureCard reveal">
+              <div class="featureCard__icon" aria-hidden="true"><i class="fa-solid fa-couch"></i></div>
+              <h3 class="h3">Ambiente confortável</h3>
+              <p class="p">Uma clínica elegante e tranquila, para você relaxar e viver uma experiência leve.</p>
+            </div>
+
+            <div class="featureCard reveal">
+              <div class="featureCard__icon" aria-hidden="true"><i class="fa-solid fa-fingerprint"></i></div>
+              <h3 class="h3">Atendimento personalizado</h3>
+              <p class="p">Plano sob medida, alinhado ao seu objetivo e ao que faz sentido para você.</p>
+            </div>
+          </div>
+
+          <div class="clinicShot reveal">
+            <div class="clinicShot__media">
+              <img
+                src="assets/img/clinica.jpg"
+                alt="Estrutura moderna e sofisticada da clínica"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="clinicShot__content">
+              <h3 class="h3">Conforto, biossegurança e estética premium.</h3>
+              <p class="p">
+                Protocolos rigorosos, materiais de alta performance e uma jornada pensada para reduzir
+                ansiedade e elevar sua confiança.
+              </p>
+              <div class="clinicShot__list">
+                <div class="check">
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                  <span>Pré-avaliação e orientação transparente</span>
+                </div>
+                <div class="check">
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                  <span>Planejamento com foco em naturalidade</span>
+                </div>
+                <div class="check">
+                  <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                  <span>Acompanhamento próximo no pós-tratamento</span>
+                </div>
+              </div>
+              <a class="btn btn--secondary" href="#contato" data-cta="differentials">
+                <i class="fa-solid fa-phone"></i>
+                Falar com a clínica
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+        Depoimentos (Slider / Carrossel em Vanilla JS)
+        ========================================================= -->
+      <section class="section section--alt" id="depoimentos">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Prova social</p>
+            <h2 class="h2">Depoimentos de quem <span class="text-gradient">viveu</span> a experiência.</h2>
+            <p class="section__sub">
+              Confiança se constrói com consistência. Veja o que nossos pacientes dizem sobre atendimento,
+              conforto e resultados.
+            </p>
+          </div>
+
+          <div class="slider reveal" data-slider="testimonials" aria-label="Carrossel de depoimentos">
+            <div class="slider__viewport">
+              <div class="slider__track" id="testimonialsTrack">
+                <article class="tCard">
+                  <div class="tCard__top">
+                    <img
+                      class="tCard__avatar"
+                      src="https://randomuser.me/api/portraits/women/44.jpg"
+                      alt="Foto da paciente Ana"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="tCard__who">
+                      <strong>Ana M.</strong>
+                      <span>Clareamento + Profilaxia</span>
+                    </div>
+                  </div>
+                  <div class="stars" aria-label="Avaliação 5 de 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="tCard__quote">
+                    “Atendimento impecável. Explicaram tudo com calma e o resultado ficou super natural. Me senti
+                    segura em cada etapa.”
+                  </p>
+                </article>
+
+                <article class="tCard">
+                  <div class="tCard__top">
+                    <img
+                      class="tCard__avatar"
+                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      alt="Foto do paciente Bruno"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="tCard__who">
+                      <strong>Bruno R.</strong>
+                      <span>Implantes</span>
+                    </div>
+                  </div>
+                  <div class="stars" aria-label="Avaliação 5 de 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="tCard__quote">
+                    “Estrutura incrível e equipe extremamente profissional. O planejamento foi detalhado e
+                    transparente. Recomendo demais.”
+                  </p>
+                </article>
+
+                <article class="tCard">
+                  <div class="tCard__top">
+                    <img
+                      class="tCard__avatar"
+                      src="https://randomuser.me/api/portraits/women/68.jpg"
+                      alt="Foto da paciente Camila"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div class="tCard__who">
+                      <strong>Camila S.</strong>
+                      <span>Lentes de contato dental</span>
+                    </div>
+                  </div>
+                  <div class="stars" aria-label="Avaliação 5 de 5">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="tCard__quote">
+                    “Meu sorriso ficou elegante, sem exageros. O cuidado com detalhes e o acompanhamento foram
+                    acima do que eu esperava.”
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="slider__controls">
+              <button class="iconBtn" type="button" data-slider-prev aria-label="Depoimento anterior">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="dots" aria-label="Paginação do carrossel" id="testimonialsDots"></div>
+              <button class="iconBtn" type="button" data-slider-next aria-label="Próximo depoimento">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      <!-- =========================================================
+        Antes e Depois (Resultados Reais)
+        ========================================================= -->
+      <section class="section" id="resultados">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Resultados</p>
+            <h2 class="h2">A <span class="text-gradient">transformação</span> que você sempre <span class="text-gradient">sonhou</span>.</h2>
+            <p class="section__sub">
+              Veja exemplos reais de como a nossa tecnologia e arte podem devolver a harmonia ao seu sorriso.
+            </p>
+          </div>
+
+          <div class="results reveal">
+            <div class="results__grid">
+              <div class="resultItem">
+                <div class="resultItem__media">
+                  <div class="resultItem__label before">Antes</div>
+                  <img src="assets/img/img1.jpeg" alt="Caso Clínico 1 - Antes" />
+                </div>
+                <div class="resultItem__media">
+                  <div class="resultItem__label after">Depois</div>
+                  <img src="assets/img/img2.jpeg" alt="Caso Clínico 1 - Depois" />
+                </div>
+                <div class="resultItem__content">
+                  <h3 class="h3">Reabilitação Oral</h3>
+                  <p class="p">Transformação completa com lentes de contato e implantes.</p>
+                </div>
+              </div>
+
+              <div class="resultItem">
+                <div class="resultItem__media">
+                  <div class="resultItem__label before">Antes</div>
+                  <img src="assets/img/img3.jpeg" alt="Caso Clínico 2 - Antes" />
+                </div>
+                <div class="resultItem__media">
+                  <div class="resultItem__label after">Depois</div>
+                  <img src="assets/img/img4.jpeg" alt="Caso Clínico 2 - Depois" />
+                </div>
+                <div class="resultItem__content">
+                  <h3 class="h3">Estética Dental</h3>
+                  <p class="p">Harmonização do sorriso com foco em naturalidade.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+        FAQ (Dúvidas Frequentes)
+        ========================================================= -->
+      <section class="section section--alt" id="faq">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Dúvidas</p>
+            <h2 class="h2">Perguntas <span class="text-gradient">frequentes</span>.</h2>
+            <p class="section__sub">
+              Tire suas principais dúvidas sobre nossos tratamentos e protocolos de atendimento.
+            </p>
+          </div>
+
+          <div class="faq reveal">
+            <div class="accordion">
+              <details class="accordion__item">
+                <summary class="accordion__trigger">
+                  <span>Como funciona a primeira avaliação?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="accordion__content">
+                  <p class="p">
+                    Realizamos um diagnóstico completo com exames digitais e escaneamento intraoral, onde
+                    explicamos todas as possibilidades e criamos um plano personalizado.
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion__item">
+                <summary class="accordion__trigger">
+                  <span>Quais são as formas de pagamento?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="accordion__content">
+                  <p class="p">
+                    Trabalhamos com diversas modalidades: parcelamento no cartão, boleto bancário mediante
+                    análise e condições especiais para tratamentos completos.
+                  </p>
+                </div>
+              </details>
+
+              <details class="accordion__item">
+                <summary class="accordion__trigger">
+                  <span>Os procedimentos são dolorosos?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </summary>
+                <div class="accordion__content">
+                  <p class="p">
+                    Utilizamos técnicas avançadas de sedação consciente e anestesia eletrônica, garantindo
+                    uma experiência tranquila e indolor do início ao fim.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================
+        Contato (Form + Validação JS)
+        ========================================================= -->
+      <section class="section" id="contato">
+        <div class="container">
+          <div class="section__head reveal">
+            <p class="eyebrow">Contato</p>
+            <h2 class="h2">Vamos cuidar do seu <span class="text-gradient">sorriso</span> com <span class="text-gradient">excelência</span>.</h2>
+            <p class="section__sub">
+              Preencha o formulário e nossa equipe retorna com agilidade. Se preferir, fale direto no WhatsApp.
+            </p>
+          </div>
+
+          <div class="contact contact--modern">
+            <div class="contact__info reveal">
+              <div class="infoCard infoCard--glass">
+                <div class="infoCard__header">
+                  <h3 class="h3">Informações de Contato</h3>
+                  <p class="p p--muted">Estamos prontos para transformar seu sorriso.</p>
+                </div>
+                
+                <div class="infoCard__body">
+                  <div class="infoCard__item">
+                    <div class="infoCard__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="infoCard__text">
+                      <strong>Endereço</strong>
+                      <p class="p p--muted">Av. Premium, 123 — Centro • Sua Cidade/UF</p>
+                    </div>
+                  </div>
+                  <div class="infoCard__item">
+                    <div class="infoCard__icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                    <div class="infoCard__text">
+                      <strong>Telefone</strong>
+                      <p class="p p--muted">
+                        <a class="link" href="tel:+5500000000000">(00) 0000-0000</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infoCard__item">
+                    <div class="infoCard__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="infoCard__text">
+                      <strong>WhatsApp</strong>
+                      <p class="p p--muted">
+                        <a class="link" href="#" id="whatsLinkInline">Falar com a equipe</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="infoCard__item">
+                    <div class="infoCard__icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                    <div class="infoCard__text">
+                      <strong>Horários</strong>
+                      <p class="p p--muted">Seg–Sex: 8h–19h • Sáb: 8h–13h</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="infoCard__footer">
+                  <p class="p p--muted">Siga-nos nas redes sociais</p>
+                  <div class="infoCard__social">
+                    <a class="social" href="#" aria-label="Instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="social" href="#" aria-label="Facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="social" href="#" aria-label="YouTube">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact__form reveal">
+              <form class="form form--modern" id="contactForm" novalidate>
+                <div class="form__header">
+                  <h3 class="h3">Envie sua mensagem</h3>
+                  <p class="p p--muted">Preencha os campos abaixo e entraremos em contato.</p>
+                </div>
+                <div class="form__grid">
+                  <div class="field field--floating">
+                    <input id="name" name="name" type="text" placeholder=" " autocomplete="name" required />
+                    <label for="name">Nome completo</label>
+                    <small class="field__error" data-error-for="name"></small>
+                  </div>
+
+                  <div class="field field--floating">
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder=" "
+                      autocomplete="tel"
+                      required
+                      inputmode="tel"
+                    />
+                    <label for="phone">Telefone / WhatsApp</label>
+                    <small class="field__error" data-error-for="phone"></small>
+                  </div>
+
+                  <div class="field field--floating field--full">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder=" "
+                      autocomplete="email"
+                      required
+                    />
+                    <label for="email">E-mail preferencial</label>
+                    <small class="field__error" data-error-for="email"></small>
+                  </div>
+
+                  <div class="field field--floating field--full">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder=" "
+                      required
+                    ></textarea>
+                    <label for="message">Como podemos te ajudar?</label>
+                    <small class="field__error" data-error-for="message"></small>
+                  </div>
+                </div>
+
+                <div class="form__actions">
+                  <button class="btn btn--primary btn--full" type="submit" data-cta="form-submit">
+                    <span>Enviar Mensagem</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                  <p class="form__hint">
+                    <i class="fa-solid fa-lock"></i>
+                    Seus dados estão seguros e protegidos.
+                  </p>
+                </div>
+
+                <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+      Footer Premium
+      ========================================================= -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#inicio" aria-label="Odontologia Premium">
+            <span class="brand__mark" aria-hidden="true">
+              <i class="fa-solid fa-tooth"></i>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">Dental Care</span>
+              <span class="brand__tag">Excelência em estética e saúde</span>
+            </span>
+          </a>
+          <p class="p p--muted">
+            Clínica odontológica de alto padrão com foco em naturalidade, previsibilidade e atendimento
+            acolhedor.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <strong class="footer__title">Contato</strong>
+          <a class="footer__link" href="tel:+5500000000000">
+            <i class="fa-solid fa-phone"></i>
+            (00) 0000-0000
+          </a>
+          <a class="footer__link" href="#" id="whatsLinkFooter">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+          <div class="footer__meta">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Av. Premium, 123 — Centro • Sua Cidade/UF</span>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <strong class="footer__title">Horários</strong>
+          <div class="footer__meta">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <span>Seg–Sex: 8h–19h</span>
+          </div>
+          <div class="footer__meta">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <span>Sáb: 8h–13h</span>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <strong class="footer__title">Links rápidos</strong>
+          <a class="footer__link" href="#sobre">Sobre</a>
+          <a class="footer__link" href="#servicos">Serviços</a>
+          <a class="footer__link" href="#diferenciais">Diferenciais</a>
+          <a class="footer__link" href="#depoimentos">Depoimentos</a>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> Dental Care. Todos os direitos reservados.</span>
+        <span class="footer__note">Desenvolvido com foco em performance, SEO e conversão.</span>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+      WhatsApp Floating Button
+      ========================================================= -->
+    <a class="whatsapp" href="#" id="whatsappFloat" aria-label="Falar no WhatsApp">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <!-- =========================================================
+      Back to Top Button
+      ========================================================= -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
